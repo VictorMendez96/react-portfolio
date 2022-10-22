@@ -1,7 +1,7 @@
-import React from 'react';
+import * as React from 'react';
 
 function Navigation() {
-    return ''
+
 }
 
 export default Navigation;
