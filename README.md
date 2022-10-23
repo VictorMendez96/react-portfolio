@@ -48,22 +48,16 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 ## Installation
 
-
+No installation required, this website has been deployed using GitHub Pages. Click on the Deployment link below!
 
 
 ## Usage
 
-
- 
-
-## Application Screenshots
-
-![]()
-![]()
-![]()
-![]()
+This is my personal website, that holds my portfolio, resume, and contact information for potential employers or collaborators.
 
 
 ## Application Links
 
 [GitHub](https://github.com/VictorMendez96/react-portfolio)
+
+[Deployment]()
