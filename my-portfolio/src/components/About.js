@@ -3,6 +3,7 @@ import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import ProfilePic from '../images/profile-photo.jpg';
 
 
 function About () {
@@ -23,7 +24,7 @@ function About () {
         <Box sx={{display: 'flex', justifyContent: 'center'}} marginBottom="50px">
             <Avatar
             alt="Victor Mendez"
-            src=""
+            src={ProfilePic}
             sx={{ width: 300, height: 300}}
             />
         </Box>

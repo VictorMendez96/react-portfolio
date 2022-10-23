@@ -1,19 +1,11 @@
-import React from 'react';
+import * as React from 'react';
+import { Box } from '@mui/material';
 
 function ProjectsLayout ({children}) {
     return (
-        <div>
-            <div>
-                {children}
-                {children}
-                {children}
-            </div>
-            <div>
-                {children}
-                {children}
-                {children}
-            </div>
-        </div>
+        <Box sx={{display: 'flex', justifyContent: 'center', p: 5, flexWrap: 'wrap'}}>
+            {children}
+        </Box>
     )
 };
 

@@ -11,6 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from "react-router-dom";
+import ProfilePic from '../images/profile-photo.jpg';
 
 const pages = ['About', 'Portfolio', 'Resume', 'Contact'];
 const settings = ['GitHub', 'LinkedIn'];
@@ -35,11 +36,11 @@ function Navigation () {
   };
 
   return (
-    <AppBar position="static" disableGutters>
+    <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-            <Avatar alt="Victor Mendez" img="./profile-photo.JPG" sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}/>
+            <Avatar alt="Victor Mendez" src={ProfilePic} sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}/>
           </IconButton>
           <Typography
             variant="h6"
@@ -105,7 +106,7 @@ function Navigation () {
             </Menu>
           </Box>
           <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-            <Avatar alt="Victor Mendez" img="../profile-photo.JPG" sizes='' sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }}/>
+            <Avatar alt="Victor Mendez" src={ProfilePic} sizes='' sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }}/>
           </IconButton>
           <Typography
             variant="h5"

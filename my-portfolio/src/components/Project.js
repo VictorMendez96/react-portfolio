@@ -6,26 +6,86 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-function ProjectCard (props) {
+function ProjectCard ({project}) {
     return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, m: 2}}>
       <CardMedia
         component="img"
         height="140"
-        image="./"
-        alt="green iguana"
+        image={project.image}
+        alt={project.name}
       />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Project: 
+      <CardContent sx={{textAlign: 'center'}}>
+        <Typography gutterBottom variant="h5" component="div" 
+          sx={{
+            m: 2,
+            flexGrow: 1,
+            flexWrap: 'wrap',
+            fontFamily: 'monospace',
+            fontWeight: 700,
+            color: 'inherit',              
+            textDecoration: 'none',
+          }}>
+          Project:
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Description:
+        <Typography gutterBottom variant="h5" component="div" 
+          sx={{
+            m: 2,
+            flexGrow: 1,
+            flexWrap: 'wrap',
+            fontFamily: 'monospace',
+            fontWeight: 700,
+            color: 'inherit',              
+            textDecoration: 'none',
+          }}>
+          {project.name}
+        </Typography>
+        <Typography variant="body2" color="text.secondary"
+          sx={{
+            m: 2,
+            flexGrow: 1,
+            flexWrap: 'wrap',
+            fontFamily: 'monospace',
+            fontWeight: 700,
+            color: 'inherit',              
+            textDecoration: 'none',
+          }}>
+          {project.description}
+        </Typography>
+        <Typography variant="body2" color="text.secondary"
+          sx={{
+            m: 2,
+            flexGrow: 1,
+            flexWrap: 'wrap',
+            fontFamily: 'monospace',
+            fontWeight: 700,
+            color: 'blue',              
+            textDecoration: 'none',
+          }}>
+          {project.type}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">GitHub</Button>
-        <Button size="small">Deployment</Button>
+        <Button href={project.ghLink} size="small" sx={{
+            m: 2,
+            flexGrow: 1,
+            fontFamily: 'monospace',
+            fontWeight: 700,
+            color: 'inherit',              
+            textDecoration: 'none',
+          }}>
+          GitHub
+        </Button>
+        <Button href={project.depLink} size="small" sx={{
+            m: 2,
+            flexGrow: 1,
+            fontFamily: 'monospace',
+            fontWeight: 700,
+            color: 'inherit',              
+            textDecoration: 'none',
+          }}>
+          Deployment
+        </Button>
       </CardActions>
     </Card>
   );

@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import Navigation from '../components/Header';
 import Footer from '../components/Footer';
 import Container from '@mui/material/Container';
@@ -14,7 +14,7 @@ function MainLayout ({children}) {
             <Container disableGutters>
                 <Navigation/>
             </Container>
-            <Container disableGutters  minHeight='vh'>
+            <Container>
                 {children}
             </Container>
             <Container disableGutters>
