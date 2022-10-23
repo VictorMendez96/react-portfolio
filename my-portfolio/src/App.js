@@ -1,14 +1,24 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+
+// Import all pages
 import AboutPage from './pages/aboutPage';
-import About from './components/About';
+import ContactPage from './pages/contactPage';
+import PortfolioPage from './pages/portfolioPage';
+import ResumePage from './pages/resumePage';
 
 
 function App() {
   return (
-    <div className="App">
-      <AboutPage/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<AboutPage />}/>
+        <Route path="/Portfolio" element={<PortfolioPage/>}/>
+        <Route path="/Resume" element={<ResumePage/>}/>
+        <Route path="/Contact" element={<ContactPage/>}/>
+      </Routes>
+    </Router>
   );
 }
 
