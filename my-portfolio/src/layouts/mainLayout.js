@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from '../components/Header';
 import Footer from '../components/Footer';
+import Container from '@mui/material/Container';
 
 // Import theme and ThemeProvider
 import { ThemeProvider } from '@mui/material/styles';
@@ -8,19 +9,19 @@ import theme from '../theme/theme'
 
 function MainLayout ({children}) {
     return (
-        <div>
+        <Container disableGutters>
             <ThemeProvider theme={theme}>
-            <div>
+            <Container disableGutters>
                 <Navigation/>
-            </div>
-            <div>
+            </Container>
+            <Container disableGutters  minHeight='vh'>
                 {children}
-            </div>
-            <div>
+            </Container>
+            <Container disableGutters>
                 <Footer/>
-            </div>
+            </Container>
             </ThemeProvider>
-        </div>
+        </Container>
     )
 }
 

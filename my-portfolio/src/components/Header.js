@@ -35,7 +35,7 @@ function Navigation () {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" disableGutters>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>

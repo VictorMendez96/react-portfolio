@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 
 function About () {
     return (
-    <Container sx={{ display: 'flex', flexDirection: 'column', p: 5, alignItems:'center'}}>
+    <Container sx={{ display: 'flex', flexDirection: 'column', p: 5, alignItems:'center', minHeight: 'vh'}}>
         <Typography variant="h2" marginBottom="50px" textAlign="center"
             sx={{
               mr: 2,
