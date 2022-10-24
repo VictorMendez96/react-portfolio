@@ -60,4 +60,4 @@ This is my personal website, that holds my portfolio, resume, and contact inform
 
 [GitHub](https://github.com/VictorMendez96/react-portfolio)
 
-[Deployment]()
+[Deployment](https://victormendez96.github.io/react-portfolio/)
